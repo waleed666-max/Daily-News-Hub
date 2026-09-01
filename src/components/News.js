@@ -20,7 +20,7 @@ const capitalizeFirstLetter = (string) =>{
 
         const updateNews = async()=>{
         props.setProgress(10);
-          const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apikey}&page=${page}&pagesize=${props.pageSize}`;
+          const url = `/api/news?category=${props.category}&page=${page}&pagesize=${props.pageSize}`;
      setLoading(true)
     let data = await fetch(url);
      props.setProgress(30);
@@ -59,7 +59,7 @@ const capitalizeFirstLetter = (string) =>{
   
 const fetchMoreData = async()=>{
     setPage(page + 1)
-     const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apikey}&page=${page +1}&pagesize=${props.pageSize}`;
+     const url = `/api/news?category=${props.category}&page=${page + 1}&pagesize=${props.pageSize}`;
      //this.setState({loading:true});
     let data = await fetch(url);
     let parsedData = await data.json()  
