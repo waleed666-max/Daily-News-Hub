@@ -35,7 +35,7 @@ const capitalizeFirstLetter = (string) =>{
 
 
   useEffect(() => {
-     document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
+     document.title = `${capitalizeFirstLetter(props.category)} - Daily News Hub`;
     updateNews();
     //eslint-disable-next-line
   }, [])
