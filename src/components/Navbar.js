@@ -28,7 +28,7 @@ function NavScrollExample() {
             <Nav.Link href="/science">Science</Nav.Link>
             <Nav.Link href="/sports">Sports</Nav.Link>
             <Nav.Link href="/technology">Technology</Nav.Link>
-            <Nav.Link href="/technology">Crypto</Nav.Link>
+            
         
 
           </Nav>
